@@ -10,7 +10,12 @@ package com.springproyectodos.business;
 public interface Languaje {
 
 	/**
-	 * Variable descripción
+	 * Descripción
 	 */
 	String descripcion();
+	
+	/**
+	 * Version
+	 */
+	String version();
 }

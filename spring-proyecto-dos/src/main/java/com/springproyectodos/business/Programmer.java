@@ -4,13 +4,18 @@ package com.springproyectodos.business;
  * Interface Programmer
  *
  * @author Netasystems / Gonzalo
- * @version 1.0.0 Fecha 06/09/2018
+ * @version 1.0.0 Fecha 05/09/2018
  *
  */
 public interface Programmer {
 
 	/**
-	 * Variable 
+	 * Descripcion 
 	 */
 	String hacktheWordId();
+	
+	/**
+	 * Version
+	 */
+	String versionLeng();
 }

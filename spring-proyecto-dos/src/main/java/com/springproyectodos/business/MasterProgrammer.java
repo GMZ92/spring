@@ -31,9 +31,20 @@ public class MasterProgrammer implements Programmer{
 		this.languaje = languaje;
 	}
 
-
+	/**
+	 * Metodo descripcion
+	 */
 	public String hacktheWordId() {
         return "Programador en: " + languaje.descripcion();
     }
+
+	/**
+	 * Metodo version
+	 */
+	@Override
+	public String versionLeng() {
+		
+		return " Version = " + languaje.version();
+	}
     
 }

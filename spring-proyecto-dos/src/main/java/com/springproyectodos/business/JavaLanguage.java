@@ -15,4 +15,16 @@ public class JavaLanguage implements Languaje{
 	public String descripcion() {
 		return "PHP";
 	}
+
+	/** 
+	 * Metodo Version
+	 */
+	@Override
+	public String version() {
+		
+		return "version 1";
+	}
+	
+	
+	
 }

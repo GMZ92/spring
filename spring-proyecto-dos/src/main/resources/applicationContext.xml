@@ -8,8 +8,9 @@
 
     <bean id="perlLanguage" class="com.springproyectodos.business.PerlLanguaje">
         <property name="descriptionLanguage" value="Perfil, en XML"/>
+        <property name="versionLenguaje" value="1.0"/>
     </bean>
-
+     
     <bean id="gonzaloProgrammer" class="com.springproyectodos.business.Gonzalo" >
         <constructor-arg ref="perlLanguage"/>
     </bean>

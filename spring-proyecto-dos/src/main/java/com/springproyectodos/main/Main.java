@@ -3,6 +3,7 @@ package com.springproyectodos.main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 import com.springproyectodos.business.Programmer;
 
 /**
@@ -18,7 +19,7 @@ public class Main {
      * Método main
      *<p></p>
      *
-     * @param args
+     * @param args Argumentos del main
      */
     public static void main(String[] args) {
     	
@@ -26,11 +27,12 @@ public class Main {
         
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         
+        
         Programmer prgm1 = context.getBean("gonzaloProgrammer", Programmer.class);
         Programmer prgm2 = context.getBean("masterProgrammer", Programmer.class);
         
-        System.out.println("El programador #1: " + prgm1.hacktheWordId());
-        System.out.println("El programador #2: " + prgm2.hacktheWordId());
+        System.out.println("El programador #1: " + prgm1.hacktheWordId() + prgm1.versionLeng());
+        System.out.println("El programador #2: " + prgm2.hacktheWordId() + prgm2.versionLeng());
     }
     
 }

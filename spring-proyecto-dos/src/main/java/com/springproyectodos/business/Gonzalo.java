@@ -48,10 +48,19 @@ public class Gonzalo implements Programmer{
 
 	
 	/** 
-	 * Metodo 
+	 * Metodo lenguaje programacion
 	 */
 	public String hacktheWordId() {
-        return "Programador en: "+ languaje.descripcion();
+        return "Programador en a: "+ languaje.descripcion();
     }
+
+	/**
+	 * Metodo version
+	 */
+	@Override
+	public String versionLeng() {
+		
+		return " Version = " + languaje.version();
+	}
 
 }

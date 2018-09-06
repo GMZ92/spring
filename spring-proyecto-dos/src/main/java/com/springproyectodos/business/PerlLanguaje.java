@@ -13,6 +13,10 @@ public class PerlLanguaje implements Languaje{
      * Variable String descripcion Lenguaje
      */
     private String descriptionLanguage;
+    /**
+     * Variable version lenguaje
+     */
+    private String versionLenguaje;
 
 
 	/**
@@ -32,9 +36,36 @@ public class PerlLanguaje implements Languaje{
 		this.descriptionLanguage = descriptionLanguage;
 	}
 
+	
+	
+
+	/**
+	 * Valor a obtener
+	 * @return El valor versionLenguaje
+	 */
+	public String getVersionLenguaje() {
+		return versionLenguaje;
+	}
+
+
+	/**
+	 * Valor asignar
+	 * @param versionLenguaje La versionLenguaje asignar
+	 */
+	public void setVersionLenguaje(String versionLenguaje) {
+		this.versionLenguaje = versionLenguaje;
+	}
+
 
 	public String descripcion() {
         return descriptionLanguage;
     }
+
+
+	@Override
+	public String version() {
+		
+		return versionLenguaje;
+	}
     
 }

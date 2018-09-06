@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="javaLanguage" class="com.springproyectodos.business.JavaLanguage">
+    </bean>
+
+    <bean id="perlLanguage" class="com.springproyectodos.business.PerlLanguaje">
+        <property name="descriptionLanguage" value="Perfil, en XML"/>
+    </bean>
+
+    <bean id="gonzaloProgrammer" class="com.springproyectodos.business.Gonzalo" >
+        <constructor-arg ref="perlLanguage"/>
+    </bean>
+
+    <bean id="masterProgrammer" class="com.springproyectodos.business.MasterProgrammer" >
+        <property name="languaje" ref="javaLanguage" />
+    </bean>
+
+</beans>

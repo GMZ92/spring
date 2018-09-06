@@ -2,7 +2,7 @@ package com.springproyectodos.main;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import com.springproyectodos.business.Programmer;
 
@@ -25,7 +25,8 @@ public class Main {
     	
         System.out.println("Ejercicio #2 de Spring");
         
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("C:\\archivoXml\\applicationContext.xml");
+        //ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         
         
         Programmer prgm1 = context.getBean("gonzaloProgrammer", Programmer.class);
